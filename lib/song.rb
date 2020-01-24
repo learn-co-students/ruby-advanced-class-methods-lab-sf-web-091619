@@ -35,7 +35,6 @@ class Song
   end
 
   def self.find_or_create_by_name (input)
-    ## returning the first array value vvv (<-THAT) seems like a hack.  ASK ABOUT THIS
     self.find_by_name(input) ? self.all[0] : self.create_by_name(input)
   end
 
